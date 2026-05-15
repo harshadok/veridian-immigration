@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Cormorant_Garamond } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import WelcomePopup from '@/components/WelcomePopup';
 import { COMPANY } from '@/data/site';
 
 const sans = Plus_Jakarta_Sans({
@@ -111,6 +112,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <WelcomePopup />
       </body>
     </html>
   );
