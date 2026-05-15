@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-950: #031912;
+  --brand-900: #062c1e;
+  --brand-700: #0d4e34;
+  --brand-500: #1f7d54;
+  --gold-500: #b88a23;
+  --gold-400: #d4a73b;
+  --cream: #faf7f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  color: #0a1a14;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display), 'Cormorant Garamond', serif;
+  letter-spacing: -0.005em;
+  font-weight: 600;
+}
+
+.container-x {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 bg-brand-900 text-cream font-semibold px-7 py-3.5 rounded-full shadow-lg shadow-brand-900/30 hover:bg-brand-700 hover:-translate-y-0.5 transition-all duration-300;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 border-2 border-cream text-cream font-semibold px-7 py-3.5 rounded-full hover:bg-cream hover:text-brand-900 transition-all duration-300;
+}
+
+.btn-gold {
+  @apply inline-flex items-center justify-center gap-2 font-semibold px-7 py-3.5 rounded-full text-brand-900 transition-all duration-300 shadow-lg shadow-gold-500/30 hover:-translate-y-0.5;
+  background-image: linear-gradient(135deg, #e0bd56 0%, #b88a23 100%);
+}
+.btn-gold:hover {
+  background-image: linear-gradient(135deg, #d4a73b 0%, #9a701b 100%);
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl lg:text-6xl font-display font-semibold text-brand-900 leading-[1.1];
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 text-xs font-semibold tracking-[0.25em] uppercase text-gold-600 mb-4;
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: currentColor;
+}
+
+/* Decorative gold divider used like in the logo */
+.gold-divider {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gold-500);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  height: 1px;
+  width: 40px;
+  background: currentColor;
+}
+
+/* Subtle grid background */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(6,44,30,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6,44,30,0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #f5f3ec; }
+::-webkit-scrollbar-thumb { background: #0d4e34; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #062c1e; }
+
+/* Country card hover */
+.country-card {
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s ease;
+}
+.country-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(6,44,30,0.35);
+}
+
+/* Gold shimmering text */
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #b88a23 0%, #e0bd56 50%, #b88a23 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Marquee */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+/* Premium ornament — diamond like in the logo */
+.ornament {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--gold-500);
+}
+.ornament::before,
+.ornament::after {
+  content: '';
+  height: 1px;
+  width: 80px;
+  background: currentColor;
+}
+.ornament-diamond {
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
