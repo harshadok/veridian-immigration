@@ -133,7 +133,6 @@ export const TESTIMONIALS = [
 export const STATS = [
   { value: '3+',   label: 'Years of Service' },
   { value: '98%',  label: 'Visa Approval Rate' },
-  { value: '500+', label: 'Partner Universities' },
   { value: '8',    label: 'Destination Countries' }
 ];
 

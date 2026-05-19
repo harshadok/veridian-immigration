@@ -65,7 +65,7 @@ export default function Hero() {
             className="flex flex-wrap gap-x-8 gap-y-3 text-sm animate-fade-up"
             style={{ animationDelay: '0.55s', opacity: 0 }}
           >
-            {['98% Visa Approval Rate', '500+ Partner Universities', 'Certified Consultants'].map((item) => (
+            {['98% Visa Approval Rate', 'UAE-Licensed Consultancy', 'Honest, Transparent Guidance'].map((item) => (
               <div key={item} className="flex items-center gap-2">
                 <CheckCircle2 size={18} className="text-gold-400" />
                 <span>{item}</span>

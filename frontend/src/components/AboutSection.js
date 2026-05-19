@@ -2,7 +2,7 @@ import { Award, Users, Globe2, ShieldCheck } from 'lucide-react';
 
 const features = [
   { icon: Award,        title: 'UAE-Licensed',          desc: 'Authorised immigration consultancy in Dubai.' },
-  { icon: Globe2,       title: 'Worldwide Network',     desc: '500+ universities across our partner programmes.' },
+  { icon: Globe2,       title: 'Global Reach',          desc: '8 top destinations: Canada, Australia, UK, USA & more.' },
   { icon: ShieldCheck,  title: 'Transparent Process',   desc: 'No hidden fees. Honest guidance, always.' },
   { icon: Users,        title: 'Personal Attention',    desc: 'Every case handled with care, start to finish.' }
 ];

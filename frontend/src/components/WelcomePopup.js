@@ -74,12 +74,12 @@ export default function WelcomePopup() {
 
   if (!open) return null;
 
-  const highlights = [
-    { Icon: Users,  value: STATS[0].value, label: STATS[0].label },
-    { Icon: Award,  value: STATS[1].value, label: STATS[1].label },
-    { Icon: Globe2, value: STATS[2].value, label: STATS[2].label },
-    { Icon: Crown,  value: STATS[3].value, label: STATS[3].label }
-  ];
+  const icons = [Crown, Award, Globe2, Users];
+  const highlights = STATS.map((s, i) => ({
+    Icon: icons[i] || Users,
+    value: s.value,
+    label: s.label
+  }));
 
   return (
     <div
@@ -135,7 +135,7 @@ export default function WelcomePopup() {
           </div>
 
           <div className="relative text-xs text-white/65">
-            UAE-licensed Dubai consultancy · 500+ partner universities · 8 destinations
+            UAE-licensed Dubai consultancy · Honest guidance · 8 global destinations
           </div>
         </div>
 
