@@ -67,11 +67,10 @@ export default function EnquiryForm() {
         className="w-full px-4 py-3 rounded-xl border border-brand-100 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition text-slate-700 bg-cream/40 relative"
       >
         <option value="">Interested In *</option>
-        <option>UAE Golden Visa</option>
         <option>Study Abroad</option>
         <option>Permanent Residency</option>
         <option>Work Permit</option>
-        <option>Business Setup</option>
+        <option>Visa Assistance</option>
         <option>Family Sponsorship</option>
         <option>IELTS / PTE Coaching</option>
         <option>Other</option>

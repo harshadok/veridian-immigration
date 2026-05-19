@@ -6,7 +6,7 @@ export const COMPANY = {
   location: 'Dubai',
   tagline: 'Your Journey. Our Commitment. Your Future.',
   description:
-    'A premier Dubai-based immigration consultancy guiding individuals and families to a global future.',
+    'A Dubai-based immigration consultancy guiding individuals and families to a global future.',
   email: 'info@veridianimmigration.ae',
   phone: '+971 50 123 4567',
   phoneLink: '+971501234567',
@@ -72,21 +72,10 @@ export const COUNTRIES = [
     flag: 'https://flagcdn.com/w320/sg.png',
     image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=900',
     blurb: 'Asia\'s premier business and education hub.'
-  },
-  {
-    code: 'ae', name: 'United Arab Emirates', slug: 'uae',
-    flag: 'https://flagcdn.com/w320/ae.png',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900',
-    blurb: 'Golden Visa, residency and a global business hub at home.'
   }
 ];
 
 export const SERVICES = [
-  {
-    icon: 'Crown',
-    title: 'UAE Golden Visa',
-    desc: 'Long-term residency for investors, entrepreneurs, and exceptional talent in the UAE.'
-  },
   {
     icon: 'GraduationCap',
     title: 'Study Abroad',
@@ -95,7 +84,7 @@ export const SERVICES = [
   {
     icon: 'Plane',
     title: 'Visa Assistance',
-    desc: 'Student, tourist, work, and family visas with industry-leading approval rates.'
+    desc: 'Student, tourist, work, and family visas handled with care and precision.'
   },
   {
     icon: 'Briefcase',
@@ -106,11 +95,6 @@ export const SERVICES = [
     icon: 'Home',
     title: 'Permanent Residency',
     desc: 'PR pathways for Canada, Australia, and other key destinations.'
-  },
-  {
-    icon: 'Building2',
-    title: 'Business Setup',
-    desc: 'Company formation, investor visas, and business migration solutions.'
   },
   {
     icon: 'Languages',
@@ -124,17 +108,12 @@ export const SERVICES = [
   }
 ];
 
+// TODO: Replace with real client testimonials once you've collected them.
 export const TESTIMONIALS = [
   {
-    name: 'Priya Sharma',
-    course: 'MS in Data Science · Canada',
-    text: 'Veridian made my dream of studying in Canada a reality. From Dubai to Toronto, every step was handled with absolute care and precision.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200'
-  },
-  {
     name: 'Ahmed Al-Mansoori',
-    course: 'UAE Golden Visa',
-    text: 'Securing my Golden Visa was complex, but the Veridian team\'s expertise and personal attention made it effortless. Truly world-class service.',
+    course: 'Family Sponsorship · Dubai',
+    text: 'The Veridian team handled my family\'s sponsorship application with care from start to finish. Honest advice and clear communication throughout.',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200'
   },
   {
@@ -152,10 +131,10 @@ export const TESTIMONIALS = [
 ];
 
 export const STATS = [
-  { value: '5,000+', label: 'Successful Clients' },
-  { value: '98%',    label: 'Visa Approval Rate' },
-  { value: '500+',   label: 'Partner Universities' },
-  { value: '15+',    label: 'Years of Excellence' }
+  { value: '3+',   label: 'Years of Service' },
+  { value: '98%',  label: 'Visa Approval Rate' },
+  { value: '500+', label: 'Partner Universities' },
+  { value: '8',    label: 'Destination Countries' }
 ];
 
 export const PROCESS_STEPS = [
@@ -167,9 +146,27 @@ export const PROCESS_STEPS = [
   { n: '06', title: 'Beyond Departure', desc: 'Travel, accommodation, and post-landing support — we stay with you.' }
 ];
 
-export const WHY_US = [
-  { title: 'Certified Counsellors', desc: 'ICCRC and MARA-affiliated experts.' },
-  { title: 'Worldwide Network',     desc: '500+ universities across 30+ countries.' },
-  { title: 'Transparent Process',   desc: 'No hidden fees. Just honest guidance.' },
-  { title: '5,000+ Success Stories', desc: 'Clients placed across the globe since 2010.' }
+// TODO: Replace placeholder names, photos and LinkedIn URLs with real team data.
+export const TEAM = [
+  {
+    name: '[CEO Name]',
+    role: 'Founder & CEO',
+    bio: 'Leads Veridian\'s vision and global partnerships, with a focus on honest, transparent guidance for every client.',
+    photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400',
+    linkedin: '#'
+  },
+  {
+    name: '[Director Name]',
+    role: 'Director of Operations',
+    bio: 'Oversees end-to-end case management — from initial consultation through visa processing and beyond.',
+    photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400',
+    linkedin: '#'
+  },
+  {
+    name: '[Manager Name]',
+    role: 'Client Services Manager',
+    bio: 'Your point of contact for every step of the journey, ensuring nothing falls through the cracks.',
+    photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400',
+    linkedin: '#'
+  }
 ];

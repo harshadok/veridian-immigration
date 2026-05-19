@@ -29,9 +29,9 @@ export const metadata = {
     template: '%s | Veridian Immigration Services Dubai'
   },
   description:
-    'Veridian Immigration Services is a premier Dubai-based consultancy guiding individuals and families to a global future — UAE Golden Visa, study abroad, PR, and work permits.',
+    'Veridian Immigration Services is a Dubai-based consultancy guiding individuals and families to a global future — study abroad, work permits, permanent residency, and IELTS coaching.',
   keywords:
-    'Dubai immigration consultancy, UAE Golden Visa, study abroad Dubai, visa consultant UAE, IELTS coaching Dubai, PR services, Veridian Immigration',
+    'Dubai immigration consultancy, study abroad Dubai, visa consultant UAE, IELTS coaching Dubai, PR services, work permits, family sponsorship, Veridian Immigration',
   alternates: { canonical: '/' },
   robots: {
     index: true,

@@ -4,6 +4,7 @@ import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
 import CountriesSection from '@/components/CountriesSection';
 import ProcessSection from '@/components/ProcessSection';
+import TeamSection from '@/components/TeamSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import EnquiryForm from '@/components/EnquiryForm';
@@ -18,6 +19,7 @@ export default function HomePage() {
       <ServicesSection />
       <CountriesSection />
       <ProcessSection />
+      <TeamSection />
       <TestimonialsSection />
       <CTASection />
       <section id="contact" className="py-24 bg-gradient-to-b from-white via-cream to-brand-50/40">

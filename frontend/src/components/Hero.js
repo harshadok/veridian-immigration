@@ -101,11 +101,11 @@ export default function Hero() {
                 />
                 <select className="w-full px-4 py-3 rounded-xl border border-brand-100 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition text-slate-600 bg-cream/50">
                   <option>Interested In</option>
-                  <option>UAE Golden Visa</option>
                   <option>Study Abroad</option>
                   <option>Permanent Residency</option>
                   <option>Work Permit</option>
-                  <option>Business Setup</option>
+                  <option>Visa Assistance</option>
+                  <option>IELTS / PTE Coaching</option>
                   <option>Family Sponsorship</option>
                 </select>
                 <button

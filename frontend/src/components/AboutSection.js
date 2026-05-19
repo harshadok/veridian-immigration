@@ -1,10 +1,10 @@
 import { Award, Users, Globe2, ShieldCheck } from 'lucide-react';
 
 const features = [
-  { icon: Award,        title: 'Certified Consultants', desc: 'ICCRC, MARA & UAE-licensed experts.' },
-  { icon: Globe2,       title: 'Worldwide Network',     desc: '500+ universities, 30+ countries.' },
-  { icon: ShieldCheck,  title: 'Transparent Process',   desc: 'No hidden fees. Honest guidance.' },
-  { icon: Users,        title: '5,000+ Success Stories',desc: 'Clients placed across the globe.' }
+  { icon: Award,        title: 'UAE-Licensed',          desc: 'Authorised immigration consultancy in Dubai.' },
+  { icon: Globe2,       title: 'Worldwide Network',     desc: '500+ universities across our partner programmes.' },
+  { icon: ShieldCheck,  title: 'Transparent Process',   desc: 'No hidden fees. Honest guidance, always.' },
+  { icon: Users,        title: 'Personal Attention',    desc: 'Every case handled with care, start to finish.' }
 ];
 
 export default function AboutSection() {
@@ -45,11 +45,11 @@ export default function AboutSection() {
           {/* Floating badge */}
           <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-5 flex items-center gap-4 border-2 border-gold-400/30">
             <div className="w-16 h-16 rounded-full bg-gold-gradient grid place-items-center text-brand-900 font-display font-bold text-2xl shadow-inner">
-              15+
+              3+
             </div>
             <div>
               <div className="font-display text-xl font-semibold text-brand-900">Years of</div>
-              <div className="text-sm text-gold-600 font-semibold tracking-widest uppercase">Excellence</div>
+              <div className="text-sm text-gold-600 font-semibold tracking-widest uppercase">Service</div>
             </div>
           </div>
         </div>
@@ -66,10 +66,10 @@ export default function AboutSection() {
             <span className="ornament-diamond"></span>
           </div>
           <p className="text-slate-600 text-lg leading-relaxed mb-4 font-light">
-            Veridian Immigration Services is a premier Dubai-based consultancy with a vision of providing honest, transparent and efficient guidance to clients across the UAE and beyond. Our experienced team has helped thousands of individuals and families achieve their international aspirations.
+            Veridian Immigration Services is a Dubai-based consultancy founded on a simple principle: honest, transparent guidance for every client. We're a young firm with a focused team, dedicated to walking every step of your international journey with you.
           </p>
           <p className="text-slate-600 leading-relaxed mb-10 font-light">
-            From the UAE Golden Visa to studying abroad, work permits to permanent residency — we walk every step of the journey with you, with the personal care our clients have come to expect.
+            From studying abroad to work permits, permanent residency to family sponsorship — we handle each case with the personal attention that bigger consultancies can't match.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-5">

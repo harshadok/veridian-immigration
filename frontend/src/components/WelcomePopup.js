@@ -135,7 +135,7 @@ export default function WelcomePopup() {
           </div>
 
           <div className="relative text-xs text-white/65">
-            ICCRC & MARA-affiliated experts · 500+ universities · 30+ countries
+            UAE-licensed Dubai consultancy · 500+ partner universities · 8 destinations
           </div>
         </div>
 
