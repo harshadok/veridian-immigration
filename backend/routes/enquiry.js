@@ -3,7 +3,7 @@ const { body, validationResult } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
 const { sendEnquiryEmail } = require('../utils/mailer');
-const { appendEnquiryRow, getSpreadsheetInfo } = require('../utils/googleSheets');
+const { appendEnquiryRow, getSpreadsheetInfo, getGoogleSheetsConfig } = require('../utils/googleSheets');
 
 const router = express.Router();
 const DATA_FILE = path.join(__dirname, '..', 'data', 'enquiries.json');
@@ -135,18 +135,28 @@ router.get('/export', (req, res) => {
 });
 
 // GET /api/enquiry/check-sheets - verify Google Sheets connection
-router.get('/check-sheets', async (_req, res) => {
+router.get('/check-sheets', async (req, res) => {
+  const key = req.headers['x-admin-key'];
+  if (!process.env.ADMIN_KEY || key !== process.env.ADMIN_KEY) {
+    return res.status(401).json({ success: false, message: 'Unauthorized' });
+  }
+
   try {
     const info = await getSpreadsheetInfo();
     res.json({
       success: true,
       title: info.properties.title,
       spreadsheetId: info.spreadsheetId,
+      configured: getGoogleSheetsConfig(),
       sheets: info.sheets.map((sheet) => sheet.properties.title)
     });
   } catch (err) {
     console.error('Sheets check error:', err);
-    res.status(500).json({ success: false, message: err.message });
+    res.status(500).json({
+      success: false,
+      message: err.message,
+      configured: getGoogleSheetsConfig()
+    });
   }
 });
 
