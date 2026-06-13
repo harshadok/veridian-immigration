@@ -7,13 +7,13 @@ export const COMPANY = {
   tagline: 'Your Journey. Our Commitment. Your Future.',
   description:
     'A Dubai-based immigration consultancy guiding individuals and families to a global future.',
-  email: 'info@veridianimmigration.ae',
+  email: 'info@veridianimmigration.com',
   phone: '+971 50 123 4567',
   phoneLink: '+971501234567',
   whatsapp: '971501234567',
   address: 'Sheikh Zayed Road, Business Bay, Dubai, UAE',
   hours: 'Sun–Thu: 9:00 AM – 6:00 PM',
-  url: 'https://veridianimmigration.ae',
+  url: 'https://veridianimmigration.com',
   geo: { lat: 25.1873, lng: 55.2754 },
   social: {
     facebook:  'https://www.facebook.com/veridianimmigration',
@@ -150,42 +150,42 @@ export const TEAM = [
     name: 'SHAIK MOHAMMED RAFI',
     role: 'Managing Director (MD)',
     bio: 'Leads Veridian\'s strategic vision and ensures excellence in every client engagement.',
-    photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400',
+    photo: 'https://ui-avatars.com/api/?name=SHAIK+RAFI&background=1e40af&color=fff&size=200&bold=true',
     linkedin: '#'
   },
   {
     name: 'SAFANUL FARIS',
     role: 'Chief Executive Officer (CEO)',
     bio: 'Guides Veridian\'s growth and global partnerships with a focus on transparent, honest client guidance.',
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400',
+    photo: 'https://ui-avatars.com/api/?name=SAFANUL+FARIS&background=1e40af&color=fff&size=200&bold=true',
     linkedin: '#'
   },
   {
     name: 'SHAHZEENA SHAIBA',
     role: 'Chief Operating Officer (COO)',
     bio: 'Oversees end-to-end case management — from initial consultation through visa processing and beyond.',
-    photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400',
+    photo: 'https://ui-avatars.com/api/?name=SHAHZEENA+SHAIBA&background=1e40af&color=fff&size=200&bold=true',
     linkedin: '#'
   },
   {
     name: 'ARJUMAN RANA',
     role: 'Processing Manager',
     bio: 'Ensures smooth and timely processing of all visa applications and documentation.',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400',
+    photo: 'https://ui-avatars.com/api/?name=ARJUMAN+RANA&background=1e40af&color=fff&size=200&bold=true',
     linkedin: '#'
   },
   {
     name: 'ISAAQ',
     role: 'Public Relations Officer (PRO)',
     bio: 'Builds and strengthens Veridian\'s relationships with partners, clients, and the community.',
-    photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400',
+    photo: 'https://ui-avatars.com/api/?name=ISAAQ&background=1e40af&color=fff&size=200&bold=true',
     linkedin: '#'
   },
   {
     name: 'MOHAMMED SHAFIQ',
     role: 'Marketing Manager',
     bio: 'Drives Veridian\'s brand presence and connects us with prospective clients worldwide.',
-    photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400',
+    photo: 'https://ui-avatars.com/api/?name=MOHAMMED+SHAFIQ&background=1e40af&color=fff&size=200&bold=true',
     linkedin: '#'
   }
 ];

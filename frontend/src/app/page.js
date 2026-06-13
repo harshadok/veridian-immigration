@@ -5,7 +5,6 @@ import ServicesSection from '@/components/ServicesSection';
 import CountriesSection from '@/components/CountriesSection';
 import ProcessSection from '@/components/ProcessSection';
 import TeamSection from '@/components/TeamSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import EnquiryForm from '@/components/EnquiryForm';
 import { COMPANY } from '@/data/site';
@@ -20,7 +19,6 @@ export default function HomePage() {
       <CountriesSection />
       <ProcessSection />
       <TeamSection />
-      <TestimonialsSection />
       <CTASection />
       <section id="contact" className="py-24 bg-gradient-to-b from-white via-cream to-brand-50/40">
         <div className="container-x grid md:grid-cols-2 gap-12 items-start mb-12">
