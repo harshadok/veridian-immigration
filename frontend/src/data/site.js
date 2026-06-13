@@ -145,26 +145,46 @@ export const PROCESS_STEPS = [
   { n: '06', title: 'Beyond Departure', desc: 'Travel, accommodation, and post-landing support — we stay with you.' }
 ];
 
-// TODO: Replace placeholder names, photos and LinkedIn URLs with real team data.
 export const TEAM = [
   {
-    name: '[CEO Name]',
-    role: 'Founder & CEO',
-    bio: 'Leads Veridian\'s vision and global partnerships, with a focus on honest, transparent guidance for every client.',
+    name: 'SHAIK MOHAMMED RAFI',
+    role: 'Managing Director (MD)',
+    bio: 'Leads Veridian\'s strategic vision and ensures excellence in every client engagement.',
     photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400',
     linkedin: '#'
   },
   {
-    name: '[Director Name]',
-    role: 'Director of Operations',
+    name: 'SAFANUL FARIS',
+    role: 'Chief Executive Officer (CEO)',
+    bio: 'Guides Veridian\'s growth and global partnerships with a focus on transparent, honest client guidance.',
+    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400',
+    linkedin: '#'
+  },
+  {
+    name: 'SHAHZEENA SHAIBA',
+    role: 'Chief Operating Officer (COO)',
     bio: 'Oversees end-to-end case management — from initial consultation through visa processing and beyond.',
     photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400',
     linkedin: '#'
   },
   {
-    name: '[Manager Name]',
-    role: 'Client Services Manager',
-    bio: 'Your point of contact for every step of the journey, ensuring nothing falls through the cracks.',
+    name: 'ARJUMAN RANA',
+    role: 'Processing Manager',
+    bio: 'Ensures smooth and timely processing of all visa applications and documentation.',
+    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400',
+    linkedin: '#'
+  },
+  {
+    name: 'ISAAQ',
+    role: 'Public Relations Officer (PRO)',
+    bio: 'Builds and strengthens Veridian\'s relationships with partners, clients, and the community.',
+    photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400',
+    linkedin: '#'
+  },
+  {
+    name: 'MOHAMMED SHAFIQ',
+    role: 'Marketing Manager',
+    bio: 'Drives Veridian\'s brand presence and connects us with prospective clients worldwide.',
     photo: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400',
     linkedin: '#'
   }
