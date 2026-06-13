@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { X, CheckCircle2, AlertCircle, Send, Crown, Award, Globe2, Users } from 'lucide-react';
 import { COMPANY, COUNTRIES, SERVICES, STATS } from '@/data/site';
+import { submitEnquiry } from '@/lib/enquiryApi';
 
 const STORAGE_KEY = 'veridian_welcome_seen';
 const AUTO_OPEN_DELAY_MS = 2500;
@@ -57,13 +58,7 @@ export default function WelcomePopup() {
           form.message
         ].filter(Boolean).join('\n')
       };
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/enquiry`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Submission failed');
+      await submitEnquiry(payload);
       setStatus({ state: 'success', msg: 'Thank you! Our team will contact you within 24 hours.' });
       setForm({ name: '', email: '', phone: '', service: '', country: '', branch: '', message: '' });
       setTimeout(close, 2200);

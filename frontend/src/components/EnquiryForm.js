@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { submitEnquiry } from '@/lib/enquiryApi';
 
 export default function EnquiryForm() {
   const [form, setForm] = useState({
@@ -15,13 +16,7 @@ export default function EnquiryForm() {
     e.preventDefault();
     setStatus({ state: 'loading', msg: '' });
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/enquiry`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form)
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message || 'Submission failed');
+      await submitEnquiry(form);
       setStatus({ state: 'success', msg: 'Thank you! Our team will contact you within 24 hours.' });
       setForm({ name: '', email: '', phone: '', destination: '', message: '' });
     } catch (err) {

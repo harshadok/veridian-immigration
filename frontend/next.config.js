@@ -19,9 +19,6 @@ const nextConfig = {
       { protocol: 'https', hostname: 'flagcdn.com' }
     ]
   },
-  env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
-  },
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }];
   }
