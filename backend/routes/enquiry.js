@@ -64,14 +64,23 @@ router.post(
       } catch (csvErr) {
         console.error('CSV write error:', csvErr);
       }
-      // Send to Google Sheets if configured
-      try {
-        await appendEnquiryRow(enquiry);
-      } catch (gsErr) {
-        console.error('Google Sheets error:', gsErr.message);
-      }
     } catch (err) {
       console.error('Storage error:', err);
+      return res.status(500).json({
+        success: false,
+        message: 'Failed to save enquiry. Please try again.'
+      });
+    }
+
+    // Google Sheets is the primary lead destination. Do not report success if it fails.
+    try {
+      await appendEnquiryRow(enquiry);
+    } catch (gsErr) {
+      console.error('Google Sheets error:', gsErr.message);
+      return res.status(500).json({
+        success: false,
+        message: gsErr.message || 'Failed to save enquiry to Google Sheets.'
+      });
     }
 
     // Send notification email (silently fails if SMTP not configured)
