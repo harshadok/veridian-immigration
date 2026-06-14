@@ -8,9 +8,9 @@ export const COMPANY = {
   description:
     'A Dubai-based immigration consultancy guiding individuals and families to a global future.',
   email: 'info@veridianimmigration.com',
-  phone: '+971 50 123 4567',
-  phoneLink: '+971501234567',
-  whatsapp: '971501234567',
+  phone: '+971 56 268 3678',
+  phoneLink: '+971562683678',
+  whatsapp: '971562683678',
   address: 'Al Muhairbi Building (UB Building), 15 2nd St, opposite PAK DARBAR, Al Garhoud, Dubai, UAE',
   hours: 'Sun–Thu: 9:00 AM – 6:00 PM',
   url: 'https://veridianimmigration.com',

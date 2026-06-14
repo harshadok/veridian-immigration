@@ -180,7 +180,7 @@ veridian-immigration/
 
 ## 9. Known placeholders to finalize
 
-- Phone number: `+971 50 123 4567`
+- Phone number: `+971 56 268 3678`
 - Email: `info@veridianimmigration.com`
 - Testimonials (sample text — replace with real client stories)
 

@@ -156,7 +156,7 @@ export default function WelcomePopup() {
             />
             <input
               required type="tel" name="phone" value={form.phone} onChange={onChange}
-              placeholder="Phone Number * (e.g. +971 50 123 4567)"
+              placeholder="Phone Number * (e.g. +971 56 268 3678)"
               className="w-full px-4 py-3 rounded-xl border border-brand-100 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20 outline-none transition bg-cream/40"
             />
             <select
