@@ -82,7 +82,7 @@ const localBusinessJsonLd = {
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Sheikh Zayed Road, Business Bay',
+    streetAddress: 'Al Muhairbi Building (UB Building), 15 2nd St, opposite PAK DARBAR, Al Garhoud',
     addressLocality: 'Dubai',
     addressCountry: 'AE'
   },

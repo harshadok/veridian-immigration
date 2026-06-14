@@ -1,6 +1,16 @@
 import { Linkedin } from 'lucide-react';
 import { TEAM } from '@/data/site';
 
+function initials(name) {
+  return name
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join('')
+    .toUpperCase();
+}
+
 export default function TeamSection() {
   return (
     <section id="team" className="py-16 bg-white relative overflow-hidden">
@@ -18,26 +28,24 @@ export default function TeamSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {TEAM.map((m) => (
             <article
               key={m.name}
-              className="rounded-3xl bg-cream/50 border border-brand-100 p-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="rounded-2xl bg-cream/50 border border-brand-100 p-4 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-gold-400/30 shadow-lg">
-                <img
-                  src={m.photo}
-                  alt={m.name}
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-16 h-16 mx-auto mb-3 rounded-full grid place-items-center bg-brand-700 ring-4 ring-gold-400/30 shadow-lg">
+                <span className="font-display text-lg font-semibold tracking-wide text-gold-400">
+                  {initials(m.name)}
+                </span>
               </div>
-              <h3 className="font-display text-xl font-semibold text-brand-900 text-center mb-1">
+              <h3 className="font-display text-base font-semibold text-brand-900 text-center mb-1">
                 {m.name}
               </h3>
-              <div className="text-xs text-gold-600 font-semibold tracking-widest uppercase text-center mb-3">
+              <div className="text-[10px] text-gold-600 font-semibold tracking-widest uppercase text-center mb-2">
                 {m.role}
               </div>
-              <p className="text-sm text-slate-600 leading-relaxed text-center mb-4">
+              <p className="text-xs text-slate-600 leading-relaxed text-center mb-3">
                 {m.bio}
               </p>
               {m.linkedin && m.linkedin !== '#' && (

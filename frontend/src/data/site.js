@@ -11,7 +11,7 @@ export const COMPANY = {
   phone: '+971 50 123 4567',
   phoneLink: '+971501234567',
   whatsapp: '971501234567',
-  address: 'Sheikh Zayed Road, Business Bay, Dubai, UAE',
+  address: 'Al Muhairbi Building (UB Building), 15 2nd St, opposite PAK DARBAR, Al Garhoud, Dubai, UAE',
   hours: 'Sun–Thu: 9:00 AM – 6:00 PM',
   url: 'https://veridianimmigration.com',
   geo: { lat: 25.1873, lng: 55.2754 },
@@ -131,7 +131,7 @@ export const TESTIMONIALS = [
 ];
 
 export const STATS = [
-  { value: '3+',   label: 'Years of Service' },
+  { value: '3+',   label: 'Years of Working Experience' },
   { value: '98%',  label: 'Visa Approval Rate' },
   { value: '8',    label: 'Destination Countries' }
 ];
@@ -169,7 +169,7 @@ export const TEAM = [
   },
   {
     name: 'ARJUMAN RANA',
-    role: 'Processing Manager',
+    role: 'Deputy COO & Chief Processing Officer',
     bio: 'Ensures smooth and timely processing of all visa applications and documentation.',
     photo: 'https://ui-avatars.com/api/?name=ARJUMAN+RANA&background=1e40af&color=fff&size=200&bold=true',
     linkedin: '#'

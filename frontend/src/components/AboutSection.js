@@ -49,7 +49,7 @@ export default function AboutSection() {
             </div>
             <div>
               <div className="font-display text-xl font-semibold text-brand-900">Years of</div>
-              <div className="text-sm text-gold-600 font-semibold tracking-widest uppercase">Service</div>
+              <div className="text-sm text-gold-600 font-semibold tracking-widest uppercase">Working Experience</div>
             </div>
           </div>
         </div>
